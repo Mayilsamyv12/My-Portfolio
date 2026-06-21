@@ -72,8 +72,9 @@ export default function Home() {
               </p>
               <div className="reveal reveal-scale d3 flex flex-wrap gap-4">
                 <a 
-                  href="/resume.pdf" 
-                  download="Mayilsamy_Resume.pdf"
+                  href="https://drive.google.com/uc?export=download&id=1K52VMRfbX0fUVxnoO4nuSXmw-JfrR8JR" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="shimmer inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors text-sm"
                 >
                   Download Resume
@@ -454,7 +455,7 @@ stack web technologies.  </li>
             </div>
             <div className="flex gap-3 items-center ml-auto mr-auto sm:mr-0 self-center">
               <a 
-                href="/resume.pdf" 
+                href="https://drive.google.com/file/d/1K52VMRfbX0fUVxnoO4nuSXmw-JfrR8JR/view?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="inline-flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium px-5 py-2.5 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-900 transition-colors text-xs"
@@ -462,8 +463,9 @@ stack web technologies.  </li>
                 View Resume
               </a>
               <a 
-                href="/resume.pdf" 
-                download="Mayilsamy_Resume.pdf"
+                href="https://drive.google.com/uc?export=download&id=1K52VMRfbX0fUVxnoO4nuSXmw-JfrR8JR" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="shimmer inline-flex items-center gap-2 bg-accent text-white font-medium px-5 py-2.5 rounded-full hover:bg-accent-light transition-colors text-xs shadow-lg shadow-accent/10"
               >
                 Download Resume (PDF)
