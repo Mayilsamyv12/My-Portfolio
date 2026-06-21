@@ -1,7 +1,57 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Home() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // 'success' | 'error' | null
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+    
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: accessKey || 'YOUR_ACCESS_KEY_HERE',
+          ...formData
+        })
+      });
+
+      const result = await response.json();
+      if (result.success || result.status === 200) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        console.error('Web3Forms Error:', result);
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Contact form submission error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       {/* ═══ HERO ═══ */}
@@ -22,7 +72,7 @@ export default function Home() {
               </p>
               <div className="reveal reveal-scale d3 flex flex-wrap gap-4">
                 <a 
-                  href="https://drive.google.com/uc?export=download&id=1QfsQqeGL32W-DCZGqP7_W8Z7ijYqFzGT" 
+                  href="https://drive.google.com/uc?export=download&id=1GXrPF4r18Uscm4l23IbapV7rtSD1KrQ0" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="shimmer inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors text-sm"
@@ -405,7 +455,7 @@ stack web technologies.  </li>
             </div>
             <div className="flex gap-3 items-center ml-auto mr-auto sm:mr-0 self-center">
               <a 
-                href="https://drive.google.com/file/d/1QfsQqeGL32W-DCZGqP7_W8Z7ijYqFzGT/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1GXrPF4r18Uscm4l23IbapV7rtSD1KrQ0/view?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="inline-flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium px-5 py-2.5 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-900 transition-colors text-xs"
@@ -413,7 +463,7 @@ stack web technologies.  </li>
                 View Resume
               </a>
               <a 
-                href="https://drive.google.com/uc?export=download&id=1QfsQqeGL32W-DCZGqP7_W8Z7ijYqFzGT" 
+                href="https://drive.google.com/uc?export=download&id=1GXrPF4r18Uscm4l23IbapV7rtSD1KrQ0" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="shimmer inline-flex items-center gap-2 bg-accent text-white font-medium px-5 py-2.5 rounded-full hover:bg-accent-light transition-colors text-xs shadow-lg shadow-accent/10"
@@ -468,38 +518,58 @@ stack web technologies.  </li>
                     <span className="w-9 h-9 flex items-center justify-center bg-zinc-800 rounded-lg shrink-0">
                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                     </span>
-                    <span className="text-sm">Erode, Tamil Nadu, India</span>
+                    <span className="text-sm">Chennai, Tamil Nadu, India</span>
                   </div>
                 </div>
               </div>
 
               <div className="reveal d2">
-                <form action="#" method="POST" onSubmit={(e) => { e.preventDefault(); alert('Message sent successfully!'); }}>
+                <form action="#" method="POST" onSubmit={handleSubmit}>
                   <div className="flex flex-col gap-4">
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="fname" className="block text-xs font-medium text-zinc-400 mb-1.5">Name <span aria-hidden="true">*</span></label>
                         <input type="text" id="fname" name="name" placeholder="Jane Smith" required autoComplete="name"
+                          value={formData.name} onChange={handleChange}
                           className="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors" />
                       </div>
                       <div>
                         <label htmlFor="femail" className="block text-xs font-medium text-zinc-400 mb-1.5">Email <span aria-hidden="true">*</span></label>
                         <input type="email" id="femail" name="email" placeholder="jane@company.com" required autoComplete="email"
+                          value={formData.email} onChange={handleChange}
                           className="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors" />
                       </div>
                     </div>
                     <div>
                       <label htmlFor="fsubject" className="block text-xs font-medium text-zinc-400 mb-1.5">Subject</label>
                       <input type="text" id="fsubject" name="subject" placeholder="Project inquiry"
+                        value={formData.subject} onChange={handleChange}
                         className="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors" />
                     </div>
                     <div>
                       <label htmlFor="fmessage" className="block text-xs font-medium text-zinc-400 mb-1.5">Message <span aria-hidden="true">*</span></label>
                       <textarea id="fmessage" name="message" rows="4" placeholder="Tell me about your project..." required
+                        value={formData.message} onChange={handleChange}
                         className="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors resize-none"></textarea>
                     </div>
-                    <button type="submit" className="shimmer w-full bg-accent text-white font-display font-bold text-sm py-3.5 rounded-xl hover:bg-accent-light transition-colors">
-                      Send message &rarr;
+
+                    {submitStatus === 'success' && (
+                      <div className="p-4 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-xl text-xs">
+                        Message sent successfully! I will get back to you soon.
+                      </div>
+                    )}
+                    {submitStatus === 'error' && (
+                      <div className="p-4 bg-rose-500/10 border border-rose-500/20 text-rose-400 rounded-xl text-xs">
+                        Something went wrong. Please check that you have configured your Web3Forms access key in your .env file or try again later.
+                      </div>
+                    )}
+
+                    <button 
+                      type="submit" 
+                      disabled={isSubmitting}
+                      className="shimmer w-full bg-accent text-white font-display font-bold text-sm py-3.5 rounded-xl hover:bg-accent-light transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {isSubmitting ? 'Sending...' : 'Send message →'}
                     </button>
                   </div>
                 </form>
