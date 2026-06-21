@@ -21,7 +21,7 @@ export default function Home() {
     setIsSubmitting(true);
     setSubmitStatus(null);
 
-    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || '239457fb-c227-47ab-933f-0a55f05980cb';
     
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
@@ -31,13 +31,13 @@ export default function Home() {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          access_key: accessKey || 'YOUR_ACCESS_KEY_HERE',
+          access_key: accessKey,
           ...formData
         })
       });
 
       const result = await response.json();
-      if (result.success || result.status === 200) {
+      if (result.success) {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
@@ -72,7 +72,7 @@ export default function Home() {
               </p>
               <div className="reveal reveal-scale d3 flex flex-wrap gap-4">
                 <a 
-                  href="https://drive.google.com/uc?export=download&id=1K52VMRfbX0fUVxnoO4nuSXmw-JfrR8JR" 
+                  href="https://drive.google.com/file/d/1K52VMRfbX0fUVxnoO4nuSXmw-JfrR8JR/view?usp=sharing" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="shimmer inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors text-sm"
@@ -463,7 +463,7 @@ stack web technologies.  </li>
                 View Resume
               </a>
               <a 
-                href="https://drive.google.com/uc?export=download&id=1K52VMRfbX0fUVxnoO4nuSXmw-JfrR8JR" 
+                href="https://drive.google.com/file/d/1K52VMRfbX0fUVxnoO4nuSXmw-JfrR8JR/view?usp=sharing" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="shimmer inline-flex items-center gap-2 bg-accent text-white font-medium px-5 py-2.5 rounded-full hover:bg-accent-light transition-colors text-xs shadow-lg shadow-accent/10"
