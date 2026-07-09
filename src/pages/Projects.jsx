@@ -5,80 +5,60 @@ export default function Projects() {
   const [filter, setFilter] = useState('all')
 
   const filterOptions = [
-    { value: 'all',       label: 'All (4)' },
+    { value: 'all',       label: 'All (3)' },
     { value: 'webapp',    label: 'Web App' },
     { value: 'backend',   label: 'Backend' },
-    { value: 'frontend',  label: 'Frontend' },
     { value: 'ecommerce', label: 'E-commerce' },
   ]
 
   const allProjects = [
     { 
       id: 1, 
-      title: 'Smart Healthcare Hospital Appointment System', 
+      title: 'Smart Healthcare Appointment & Pharmacy Platform', 
       category: 'webapp', 
       categoryLabel: 'Web App', 
-      tags: ['JavaScript', 'HTML', 'CSS'], 
-      year: '2024', 
-      desc: 'An intelligent web-based booking portal designed for managing patient check-ins and appointments. Streamlines clinical registration and physician assignment.', 
+      tags: ['React (Vite)', 'Django REST', 'Docker'], 
+      year: '2026', 
+      desc: 'A decoupled healthcare platform with role-based access for patients, doctors, and lab admins.', 
       img: '/images/smart_healthcare_mockup.png', 
-      url: 'https://github.com/Mayilsamyv12/Smart-Healthcare-Hospital-Appointment-System',
+      url: 'https://github.com/Mayilsamyv12',
       features: [
-        'Online appointment booking',
-        'Doctor and patient management',
-        'Medical records management',
-        'Pharmacy and laboratory integration'
+        'Architected a decoupled system — a React SPA frontend consuming a Django REST API.',
+        'Integrated Razorpay for online medicine and lab-test payments.',
+        'Implemented location-based search to surface nearby hospitals and labs.',
+        'Containerized the stack with Docker and docker-compose.'
       ]
     },
     { 
       id: 2, 
-      title: 'Smart Complaint Ticket System', 
-      category: 'backend', 
-      categoryLabel: 'Backend', 
-      tags: ['Python', 'Automation', 'Backend'], 
-      year: '2024', 
-      desc: 'A backend automation system written in Python to organize, track, and process customer complaints and helpdesk tickets efficiently.', 
-      img: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=700&q=80', 
-      url: 'https://github.com/Mayilsamyv12/Smart_Complaint_Ticket_System',
+      title: 'Eshop — Django E-Commerce Platform', 
+      category: 'ecommerce', 
+      categoryLabel: 'E-commerce', 
+      tags: ['Python', 'Django', 'MySQL'], 
+      year: '2026', 
+      desc: 'A server-rendered e-commerce app with cart, checkout, and order tracking.', 
+      img: '/images/ecommerce_mockup.png', 
+      url: 'https://github.com/Mayilsamyv12',
       features: [
-        'Ticket creation and tracking',
-        'Interactive admin dashboard',
-        'Instant status notifications',
-        'Secure role-based authentication'
+        'Built a server-rendered e-commerce application with product catalog, cart, checkout, and tracking.',
+        'Implemented user authentication, profile management, and a review/ratings system.',
+        'Designed the relational schema for products, categories, and orders.'
       ]
     },
     { 
       id: 3, 
-      title: 'Ecommerce Project', 
-      category: 'ecommerce', 
-      categoryLabel: 'E-commerce', 
-      tags: ['HTML/CSS', 'Frontend', 'E-commerce'], 
-      year: '2023', 
-      desc: 'A responsive client-facing e-commerce shopping experience featuring smooth layouts, catalog browsing, and cart structures.', 
-      img: '/images/ecommerce_mockup.png', 
-      url: 'https://github.com/Mayilsamyv12/Ecommerce-project',
+      title: 'Smart Complaint & Service Ticket System (Capstone Project)', 
+      category: 'backend', 
+      categoryLabel: 'Backend', 
+      tags: ['Flask', 'pandas', 'MySQL'], 
+      year: '2026', 
+      desc: 'A complaint tracking system with admin/manager roles and automated reporting.', 
+      img: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=700&q=80', 
+      url: 'https://github.com/Mayilsamyv12',
       features: [
-        'Product catalog and management',
-        'Dynamic shopping cart logic',
-        'Scalable order processing',
-        'Mock payment gateway integration'
-      ]
-    },
-    { 
-      id: 4, 
-      title: 'Frontend Project', 
-      category: 'frontend', 
-      categoryLabel: 'Frontend', 
-      tags: ['HTML', 'CSS', 'Responsive'], 
-      year: '2023', 
-      desc: 'A collection of frontend templates and UI layouts highlighting clean structure and responsive design.', 
-      img: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=700&q=80', 
-      url: 'https://github.com/Mayilsamyv12/Frontend-Project',
-      features: [
-        'Responsive layout templates',
-        'Clean semantic HTML structure',
-        'Custom CSS animations',
-        'Cross-browser optimization'
+        'Built a Flask application for tracking and status updates with separate admin and manager logins.',
+        'Added automated email notifications on status change and Excel export for reporting using pandas.',
+        'Designed the MySQL schema for complaints, users, and status history.'
       ]
     }
   ]

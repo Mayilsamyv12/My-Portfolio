@@ -67,15 +67,24 @@ export default function Home() {
               <h1 className="reveal reveal-blur d1 font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-zinc-900 dark:text-white mb-6">
                 Hi, I'm <span className="text-accent">Mayilsamy</span>
               </h1>
-              <p className="reveal reveal-blur d2 text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-light leading-relaxed max-w-md mb-10">
-                Full Stack <strong className="font-medium text-zinc-700 dark:text-zinc-300">Developer</strong>. Passionate about building scalable web applications and AI-powered solutions. I specialize in Python, Django, React.
+              <p className="reveal reveal-blur d2 text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-light leading-relaxed max-w-md mb-4">
+                I build responsive web interfaces, robust backends, and smart applications using Python, Django, React, and MySQL.
+              </p>
+              <p className="reveal reveal-blur d2 text-sm text-zinc-600 dark:text-zinc-400 font-medium leading-relaxed max-w-md mb-10">
+                Advanced Full Stack Development trainee, E&ICT Academy IIT Guwahati (MeitY, Govt. of India) · NASSCOM FutureSkills Prime Gold-certified (89%)
               </p>
               <div className="reveal reveal-scale d3 flex flex-wrap gap-4">
                 <a 
-                  href="https://drive.google.com/file/d/1K52VMRfbX0fUVxnoO4nuSXmw-JfrR8JR/view?usp=sharing" 
+                  href="#work"
+                  className="shimmer inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors text-sm"
+                >
+                  View Projects
+                </a>
+                <a 
+                  href="https://drive.google.com/file/d/1R-k6E7qO2icsnF0WwUlYLn7AzqLXWAAp/view?usp=drivesdk" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="shimmer inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors text-sm"
+                  className="inline-flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors text-sm"
                 >
                   Download Resume
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -83,7 +92,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a href="#contact" className="inline-flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors text-sm">
-                  Get in touch
+                  Contact Me
                 </a>
               </div>
               <div className="reveal reveal-scale d4 flex gap-8 mt-14 pt-8 border-t border-zinc-100 dark:border-zinc-900">
@@ -113,7 +122,7 @@ export default function Home() {
             <p className="reveal reveal-blur text-xs font-medium text-accent tracking-widest uppercase mb-3">About me</p>
             <h2 className="reveal reveal-left d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white leading-tight mb-6">A bit about who I am</h2>
             <p className="reveal reveal-right d2 text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-2xl mx-auto">
-              Hi, I'm Mayilsamy — a Computer Science graduate and aspiring Full Stack Developer specializing in Python, Django, React, JavaScript, HTML, CSS, and REST API development. I enjoy building responsive web applications, solving real-world problems, and continuously learning modern technologies to create impactful software.
+              Hi, I'm Mayilsamy — a Full Stack Developer fresher with hands-on experience across Python, Django, Django REST Framework, React, and MySQL. I honed my skills through a 6-month Advanced Full Stack Development training program (E&ICT Academy, IIT Guwahati – MeitY, Govt. of India) and independent projects covering decoupled REST architectures, third-party payment integration, and containerized deployment. I am also highly comfortable with DSA, OOP, Git, and Agile workflows.
             </p>
           </div>
 
@@ -162,51 +171,62 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             <div className="reveal reveal-scale d1 bg-zinc-50 dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors">
               <h3 className="font-display font-bold text-base text-zinc-900 dark:text-white mb-4 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-accent"></span> Languages
+                <span className="w-2 h-2 rounded-full bg-accent"></span> Frontend
               </h3>
               <div className="flex flex-wrap gap-2 stag-animate">
-                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Python</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">HTML5</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">CSS3</span>
                 <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">JavaScript</span>
-                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">SQL</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">React</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Bootstrap</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Vite</span>
               </div>
             </div>
             <div className="reveal reveal-scale d2 bg-zinc-50 dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors">
               <h3 className="font-display font-bold text-base text-zinc-900 dark:text-white mb-4 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-accent"></span> Frontend
-              </h3>
-              <div className="flex flex-wrap gap-2 stag-animate">
-                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">HTML</span>
-                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">CSS</span>
-                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Bootstrap</span>
-                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">React.js</span>
-              </div>
-            </div>
-            <div className="reveal reveal-scale d3 bg-zinc-50 dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors">
-              <h3 className="font-display font-bold text-base text-zinc-900 dark:text-white mb-4 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-accent"></span> Backend
               </h3>
               <div className="flex flex-wrap gap-2 stag-animate">
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Python</span>
                 <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Django</span>
-                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Django REST</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Django REST Framework</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Flask</span>
               </div>
             </div>
-            <div className="reveal reveal-scale d4 bg-zinc-50 dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors">
+            <div className="reveal reveal-scale d3 bg-zinc-50 dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors">
               <h3 className="font-display font-bold text-base text-zinc-900 dark:text-white mb-4 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-accent"></span> Database
               </h3>
               <div className="flex flex-wrap gap-2 stag-animate">
                 <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">MySQL</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">SQLite</span>
               </div>
             </div>
-            <div className="reveal reveal-scale d5 bg-zinc-50 dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors">
+            <div className="reveal reveal-scale d4 bg-zinc-50 dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors">
               <h3 className="font-display font-bold text-base text-zinc-900 dark:text-white mb-4 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-accent"></span> Tools
+                <span className="w-2 h-2 rounded-full bg-accent"></span> Tools & DevOps
               </h3>
               <div className="flex flex-wrap gap-2 stag-animate">
-                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Git / GitHub</span>
-                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">VS Code</span>
-                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Postman</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Git</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">GitHub</span>
                 <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Docker</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Docker Compose</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">VS Code</span>
+              </div>
+            </div>
+            <div className="reveal reveal-scale d5 bg-zinc-50 dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-1">
+              <h3 className="font-display font-bold text-base text-zinc-900 dark:text-white mb-4 flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-accent"></span> Core Concepts
+              </h3>
+              <div className="flex flex-wrap gap-2 stag-animate">
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">SDLC</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">OOP</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">RESTful APIs</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">JWT Authentication</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">CRUD Operations</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Responsive Web Design</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Agile</span>
+                <span className="text-xs bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Debugging</span>
               </div>
             </div>
           </div>
@@ -231,33 +251,32 @@ export default function Home() {
             <article className="card-h reveal reveal-scale d1 group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 hover:border-accent flex flex-col justify-between h-full">
               <div>
                 <div className="pf w-full h-48">
-                  <img src="/images/smart_healthcare_mockup.png" alt="Smart Healthcare Hospital Appointment System" loading="lazy" />
+                  <img src="/images/smart_healthcare_mockup.png" alt="Smart Healthcare Appointment & Pharmacy Platform" loading="lazy" />
                 </div>
                 <div className="p-6">
                   <div className="flex flex-wrap gap-2 mb-3">
-                    <span className="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full">React.js</span>
-                    <span className="text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">JavaScript</span>
-                    <span className="text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">CSS</span>
+                    <span className="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full">React (Vite)</span>
+                    <span className="text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">Django REST</span>
+                    <span className="text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">Docker</span>
                   </div>
-                  <a href="https://github.com/Mayilsamyv12/Smart-Healthcare-Hospital-Appointment-System" target="_blank" rel="noopener noreferrer">
-                    <h3 className="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors">Smart Healthcare Hospital Appointment System</h3>
+                  <a href="https://github.com/Mayilsamyv12" target="_blank" rel="noopener noreferrer">
+                    <h3 className="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors">Smart Healthcare Appointment & Pharmacy Platform</h3>
                   </a>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
-                    An intelligent booking portal designed for managing patient check-ins, clinical registration, and physician scheduling.
+                    A decoupled healthcare platform with role-based access for patients, doctors, and lab admins.
                   </p>
                   <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800">
-                    <p className="text-xs font-bold text-zinc-750 dark:text-zinc-300 mb-1">Key Features:</p>
                     <ul className="text-[11px] text-zinc-500 dark:text-zinc-400 space-y-1 pl-4 list-disc">
-                      <li>Online appointment booking</li>
-                      <li>Doctor and patient management</li>
-                      <li>Medical records management</li>
-                      <li>Pharmacy and laboratory integration</li>
+                      <li>Architected a decoupled system — a React SPA frontend consuming a Django REST API.</li>
+                      <li>Integrated Razorpay for online medicine and lab-test payments.</li>
+                      <li>Implemented location-based search to surface nearby hospitals and labs.</li>
+                      <li>Containerized the stack with Docker and docker-compose for streamlined deployment.</li>
                     </ul>
                   </div>
                 </div>
               </div>
               <div className="p-6 pt-0 mt-4">
-                <a href="https://github.com/Mayilsamyv12/Smart-Healthcare-Hospital-Appointment-System" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-medium text-zinc-900 dark:text-white nl">
+                <a href="https://github.com/Mayilsamyv12" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-medium text-zinc-900 dark:text-white nl">
                   View on GitHub &rarr;
                 </a>
               </div>
@@ -266,7 +285,7 @@ export default function Home() {
             <article className="card-h reveal reveal-scale d2 group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 hover:border-accent flex flex-col justify-between h-full">
               <div>
                 <div className="pf w-full h-48">
-                  <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80" alt="Smart Complaint Ticket System" loading="lazy" />
+                  <img src="/images/ecommerce_mockup.png" alt="Eshop — Django E-Commerce Platform" loading="lazy" />
                 </div>
                 <div className="p-6">
                   <div className="flex flex-wrap gap-2 mb-3">
@@ -274,25 +293,23 @@ export default function Home() {
                     <span className="text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">Django</span>
                     <span className="text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">MySQL</span>
                   </div>
-                  <a href="https://github.com/Mayilsamyv12/Smart_Complaint_Ticket_System" target="_blank" rel="noopener noreferrer">
-                    <h3 className="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors">Smart Complaint Ticket System</h3>
+                  <a href="https://github.com/Mayilsamyv12" target="_blank" rel="noopener noreferrer">
+                    <h3 className="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors">Eshop — Django E-Commerce Platform</h3>
                   </a>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
-                    A backend automation system to organize, track, and process customer complaints and support tickets.
+                    A server-rendered e-commerce app with cart, checkout, and order tracking.
                   </p>
                   <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800">
-                    <p className="text-xs font-bold text-zinc-750 dark:text-zinc-300 mb-1">Key Features:</p>
                     <ul className="text-[11px] text-zinc-500 dark:text-zinc-400 space-y-1 pl-4 list-disc">
-                      <li>Ticket creation and tracking</li>
-                      <li>Interactive admin dashboard</li>
-                      <li>Instant status notifications</li>
-                      <li>Secure role-based authentication</li>
+                      <li>Built a server-rendered e-commerce application with product catalog, cart, checkout, and tracking.</li>
+                      <li>Implemented user authentication, profile management, and a review/ratings system.</li>
+                      <li>Designed the relational schema for products, categories, and orders.</li>
                     </ul>
                   </div>
                 </div>
               </div>
               <div className="p-6 pt-0 mt-4">
-                <a href="https://github.com/Mayilsamyv12/Smart_Complaint_Ticket_System" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-medium text-zinc-900 dark:text-white nl">
+                <a href="https://github.com/Mayilsamyv12" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-medium text-zinc-900 dark:text-white nl">
                   View on GitHub &rarr;
                 </a>
               </div>
@@ -301,33 +318,31 @@ export default function Home() {
             <article className="card-h reveal reveal-scale d3 group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 hover:border-accent flex flex-col justify-between h-full">
               <div>
                 <div className="pf w-full h-48">
-                  <img src="/images/ecommerce_mockup.png" alt="E-Commerce Platform" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80" alt="Smart Complaint & Service Ticket System" loading="lazy" />
                 </div>
                 <div className="p-6">
                   <div className="flex flex-wrap gap-2 mb-3">
-                    <span className="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full">Django</span>
-                    <span className="text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">React.js</span>
+                    <span className="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full">Flask</span>
+                    <span className="text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">pandas</span>
                     <span className="text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">MySQL</span>
                   </div>
-                  <a href="https://github.com/Mayilsamyv12/Ecommerce-project" target="_blank" rel="noopener noreferrer">
-                    <h3 className="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors">E-Commerce Platform</h3>
+                  <a href="https://github.com/Mayilsamyv12" target="_blank" rel="noopener noreferrer">
+                    <h3 className="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors">Smart Complaint Ticket System (Capstone)</h3>
                   </a>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
-                    A responsive web storefront highlighting modern client layouts, cart structures, and inventory pipelines.
+                    A complaint tracking system with admin/manager roles and automated reporting. IIT Guwahati Capstone Project.
                   </p>
                   <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800">
-                    <p className="text-xs font-bold text-zinc-750 dark:text-zinc-300 mb-1">Key Features:</p>
                     <ul className="text-[11px] text-zinc-500 dark:text-zinc-400 space-y-1 pl-4 list-disc">
-                      <li>Product catalog and management</li>
-                      <li>Dynamic shopping cart logic</li>
-                      <li>Scalable order processing</li>
-                      <li>Mock payment gateway integration</li>
+                      <li>Built a Flask application for tracking and status updates with separate admin and manager logins.</li>
+                      <li>Added automated email notifications on status change and Excel export for reporting using pandas.</li>
+                      <li>Designed the MySQL schema for complaints, users, and status history.</li>
                     </ul>
                   </div>
                 </div>
               </div>
               <div className="p-6 pt-0 mt-4">
-                <a href="https://github.com/Mayilsamyv12/Ecommerce-project" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-medium text-zinc-900 dark:text-white nl">
+                <a href="https://github.com/Mayilsamyv12" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-medium text-zinc-900 dark:text-white nl">
                   View on GitHub &rarr;
                 </a>
               </div>
@@ -350,20 +365,17 @@ export default function Home() {
               <span className="absolute -left-2 top-1.5 w-4 h-4 rounded-full bg-accent border-4 border-white dark:border-zinc-950"></span>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-3">
                 <div>
-                  <h3 className="font-display font-bold text-xl text-zinc-900 dark:text-white">Full Stack Developer Intern</h3>
-                  <p className="text-sm text-zinc-400 font-medium">Besant Technologies, Chennai</p>
+                  <h3 className="font-display font-bold text-xl text-zinc-900 dark:text-white">Advanced Software Engineering Job Simulation</h3>
+                  <p className="text-sm text-zinc-400 font-medium">Walmart Global Tech (Forage) | Jul 2026</p>
                 </div>
                 <span className="text-xs bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full self-start sm:self-center font-bold">
-                  Internship
+                  Job Simulation
                 </span>
               </div>
               <ul className="text-sm text-zinc-500 dark:text-zinc-400 space-y-2.5 list-disc pl-5">
-                <li>Smart Complaint & Service Ticket Management System | Python, JavaScript, SQL, HTML, CSS </li>
-                <li>Developed a Smart Complaint Ticket System with complaint registration, tracking, and management features using full
-stack web technologies.  </li>
-                <li>Implemented secure authentication and role-based access control for users and administrators. </li>
-                <li>Built RESTful APIs and integrated database operations for efficient ticket handling and status management.</li>
-                <li>Designed a responsive and user-friendly interface to improve complaint resolution workflow and user experience. </li>
+                <li>Designed ERDs and UML class diagrams (Strategy design pattern) for a relational database schema.</li>
+                <li>Built Python scripts to parse CSV datasets and populate SQLite databases.</li>
+                <li>Completed applied modules in advanced data structures and software architecture.</li>
               </ul>
             </div>
           </div>
@@ -390,8 +402,8 @@ stack web technologies.  </li>
                 </div>
               </div>
               <div className="mt-8 pt-4 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between">
-                <span className="text-xs text-zinc-400">CGPA</span>
-                <span className="font-display font-bold text-xl text-zinc-900 dark:text-white">7.4 / 10</span>
+                <span className="text-xs text-zinc-400">Aggregate</span>
+                <span className="font-display font-bold text-xl text-zinc-900 dark:text-white">74%</span>
               </div>
             </article>
           </div>
@@ -414,8 +426,8 @@ stack web technologies.  </li>
                 </svg>
               </div>
               <div>
-                <h3 className="font-display font-bold text-lg text-zinc-900 dark:text-white mb-1">Full Stack Developer</h3>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">IT-ITeS SSC NASSCOM • Certificate</p>
+                <h3 className="font-display font-bold text-lg text-zinc-900 dark:text-white mb-1">Advanced Certification in Full Stack Development</h3>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">E&amp;ICT Academy, IIT Guwahati (MeitY, Govt. of India) | Oct 2025 – May 2026</p>
                 <span className="text-xs text-zinc-400">Professional Qualification</span>
               </div>
             </article>
@@ -427,9 +439,9 @@ stack web technologies.  </li>
                 </svg>
               </div>
               <div>
-                <h3 className="font-display font-bold text-lg text-zinc-900 dark:text-white mb-1">Python &amp; MySQL Certification</h3>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">Besant Technologies • Course Certificate</p>
-                <span className="text-xs text-zinc-400">Technical Course Certification</span>
+                <h3 className="font-display font-bold text-lg text-zinc-900 dark:text-white mb-1">Full Stack Developer</h3>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">NASSCOM FutureSkills Prime | Gold, 89% | Feb 2026</p>
+                <span className="text-xs text-zinc-400">Certification</span>
               </div>
             </article>
 
@@ -440,9 +452,22 @@ stack web technologies.  </li>
                 </svg>
               </div>
               <div>
-                <h3 className="font-display font-bold text-lg text-zinc-900 dark:text-white mb-1">Full Stack Development</h3>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">Besant Technologies, Chennai • Course Certificate</p>
-                <span className="text-xs text-zinc-400">Technical Course Certification</span>
+                <h3 className="font-display font-bold text-lg text-zinc-900 dark:text-white mb-1">Python Essentials 1 &amp; 2</h3>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">Cisco Networking Academy</p>
+                <span className="text-xs text-zinc-400">Certification</span>
+              </div>
+            </article>
+            
+            <article className="reveal d4 bg-zinc-50 dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors flex items-start gap-4">
+              <div className="w-12 h-12 rounded-xl bg-orange-50 dark:bg-zinc-800 flex items-center justify-center shrink-0">
+                <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-display font-bold text-lg text-zinc-900 dark:text-white mb-1">Career Edge – Young Professional</h3>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">TCS iON</p>
+                <span className="text-xs text-zinc-400">Certification</span>
               </div>
             </article>
 
@@ -455,7 +480,7 @@ stack web technologies.  </li>
             </div>
             <div className="flex gap-3 items-center ml-auto mr-auto sm:mr-0 self-center">
               <a 
-                href="https://drive.google.com/file/d/1K52VMRfbX0fUVxnoO4nuSXmw-JfrR8JR/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1R-k6E7qO2icsnF0WwUlYLn7AzqLXWAAp/view?usp=drivesdk" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="inline-flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium px-5 py-2.5 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-900 transition-colors text-xs"
@@ -463,7 +488,7 @@ stack web technologies.  </li>
                 View Resume
               </a>
               <a 
-                href="https://drive.google.com/file/d/1K52VMRfbX0fUVxnoO4nuSXmw-JfrR8JR/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1R-k6E7qO2icsnF0WwUlYLn7AzqLXWAAp/view?usp=drivesdk" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="shimmer inline-flex items-center gap-2 bg-accent text-white font-medium px-5 py-2.5 rounded-full hover:bg-accent-light transition-colors text-xs shadow-lg shadow-accent/10"
