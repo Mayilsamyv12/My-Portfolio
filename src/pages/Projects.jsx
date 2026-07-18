@@ -23,10 +23,9 @@ export default function Projects() {
       img: '/images/smart_healthcare_mockup.png', 
       url: 'https://github.com/Mayilsamyv12',
       features: [
-        'Architected a decoupled system — a React SPA frontend consuming a Django REST API.',
-        'Integrated Razorpay for online medicine and lab-test payments.',
-        'Implemented location-based search to surface nearby hospitals and labs.',
-        'Containerized the stack with Docker and docker-compose.'
+        'Troubleshot application, REST API, database, and deployment issues in a multi-user healthcare platform using React, Django REST Framework, MySQL, Docker, and Docker Compose.',
+        'Managed role-based user access and supported authentication workflows for patients, doctors, and lab administrators.',
+        'Performed database operations, API integration, and application configuration to maintain reliable system functionality.'
       ]
     },
     { 
@@ -40,9 +39,9 @@ export default function Projects() {
       img: '/images/ecommerce_mockup.png', 
       url: 'https://github.com/Mayilsamyv12',
       features: [
-        'Built a server-rendered e-commerce application with product catalog, cart, checkout, and tracking.',
-        'Implemented user authentication, profile management, and a review/ratings system.',
-        'Designed the relational schema for products, categories, and orders.'
+        'Troubleshot Django application, user authentication, database, and order-processing issues in a server-rendered e-commerce platform.',
+        'Managed MySQL relational database operations for products, categories, customers, orders, reviews, and ratings.',
+        'Configured application components and performed technical troubleshooting to support reliable system functionality and user access.'
       ]
     },
     { 
@@ -56,7 +55,7 @@ export default function Projects() {
       img: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=700&q=80', 
       url: 'https://github.com/Mayilsamyv12',
       features: [
-        'Built a Flask application for tracking and status updates with separate admin and manager logins.',
+        'Built a Flask application for complaint submission, tracking, and status updates with separate admin and manager logins.',
         'Added automated email notifications on status change and Excel export for reporting using pandas.',
         'Designed the MySQL schema for complaints, users, and status history.'
       ]
